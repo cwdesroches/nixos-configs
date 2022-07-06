@@ -28,7 +28,7 @@
       # Thinkpad x395
       x395-nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = [ ./x395-nixos/configuration.nix ];
+        modules = [ ./hosts/x395-nixos/configuration.nix ];
       };
       
     };
