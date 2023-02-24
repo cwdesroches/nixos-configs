@@ -30,6 +30,12 @@
         system = "x86_64-linux";
         modules = [ ./hosts/x395-nixos/configuration.nix ];
       };
+
+      # Macbook Pro M1 VM
+      mb-vm-nixos = nixpkgs.lib.nixosSystem {
+        system = "aarch64-linux";
+        modules = [ ./hosts/mb-vm-nixos/configuration.nix ];
+      };
       
     };
     

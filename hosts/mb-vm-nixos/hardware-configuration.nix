@@ -1,0 +1,1 @@
+# Replace with the `nixos-generate-config` result
