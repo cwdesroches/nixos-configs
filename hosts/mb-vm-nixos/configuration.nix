@@ -10,7 +10,7 @@
   networking.hostName = "mb-vm-nixos";
 
   networking = {
-    useDHCP = false;
+    useDHCP = true;
     interfaces.enp3s0f0.useDHCP = true;
     interfaces.wlp1s0.useDHCP = true;
   };
@@ -29,17 +29,12 @@
 
     pipewire = {
       enable = true;
-      pulse.enable = true;
     };
 
     xserver = {
       enable = true;
-      displayManager.gdm.enable = true;
-      desktopManager.gnome.enable = true;
     };
   };
-
-  hardware.pulseaudio.enable = false;
 
   programs = {
     fish.enable = true;
